@@ -31,6 +31,8 @@ header#cabecalho img#icone{
 }
 body{
     background-color: rgb(171, 187, 189);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 1);
 }
 div#interface {
     width: 900px;
@@ -42,6 +44,14 @@ div#interface {
 p {
     text-align: justify;
     text-indent: 50px;
+}
+/* Formatação de Links */
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 /* Formatação de Imagens com Legendas */
 figure.foto-legenda{
@@ -112,6 +122,40 @@ section#corpo{
     border-right: 1px solid #606060;
     padding-right: 20px;
 }
+
+article#noticiaprincipal h2 {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+article#noticiaprincipal header#cabecalhoartigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+article#noticiaprincipal header#cabecalhoartigo h2 {
+    /* font-family: 'Arial', sans-serif; */
+    font-size: 13pt;
+    color: #cecece;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+article#noticiaprincipal header#cabecalhoartigo h3 {
+    /* font-family: 'Arial', sans-serif; */
+    font-size: 12px;
+    color: #606060;
+}
+.direita{
+    text-align: right;
+}
+
 table#tabelaspec{
     border: 1px solid #606060;
     border-spacing: 0px;
@@ -124,7 +168,7 @@ table#tabelaspec td{
 }
 table#tabelaspec caption{
     color: #888888;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 13pt;
     font-weight: bolder;
 }
@@ -141,7 +185,7 @@ body div#interface section#corpo table#tabelaspec td.ce{
     vertical-align: top;
     text-align: right;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 td.cd{
     background-color: #cecece;
@@ -150,7 +194,27 @@ aside#lateral{
     display: block;
     width: 350px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    margin-top: 10px;
+    
 }
+aside#lateral h1{
+    font-family: 'FonteLogo';
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 5px;
+}
+aside#lateral h2{
+    font-size: 13pt;
+    color: white;
+    background-color: #606060;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 footer#rodape{
     clear: both;
     border-top: 1px solid #606060;
