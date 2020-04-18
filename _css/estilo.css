@@ -27,7 +27,7 @@ header#cabecalho h2{
 header#cabecalho img#icone{
     position: absolute;
     top: 80px;
-    left: 965px;
+    left: 1035px;
 }
 body{
     background-color: rgb(171, 187, 189);
@@ -92,19 +92,21 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 500px;
+    left: 530px;
 }
 nav#menu li{
+    font-size: 10pt;
+    font-weight: bold;
     display: inline-block;
     background-color: #dddddd;
     padding: 10px;
-    margin: 2px;
+    margin: -4px;
+    border: solid 1px #999999;
 }
 nav#menu li:hover{
     color: white;
     background-color: #606060;
     transition: background-color 1s;
-
 }
 nav#menu a{
     color: black;
