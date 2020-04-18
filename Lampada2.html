@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+</head>
+<body>
+    <h1>Lampada Interativa</h1>
+    <img src="lampapag.jpg" id="luz" onmouseover="mudar('aces')" onclick="mudar('queb')" onmouseout="mudar('apag')">
+    <script>
+        var entra = true
+        function mudar(param){
+            if (entra == true) {
+                document.getElementById("luz").src = "lamp"+param+".jpg"
+                if (param == 'queb'){
+                    entra = false
+                }
+            }
+        }
+    </script>
+</body>
+</html>

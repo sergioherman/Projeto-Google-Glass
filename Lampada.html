@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+</head>
+<body>
+    <h1>Lampada interativa</h1>
+    <img src="lampapag.jpg" id="lamp" onmousemove="muda('aces')" onclick="muda('queb')" onmouseout="muda('apag')">
+    <script>
+        var quebrada = false
+        function muda(param){
+            if (!quebrada){
+                document.getElementById('lamp').src = "lamp" + param + ".jpg"
+                // document.write(param)
+                if (param == 'queb'){
+                    quebrada = true
+                }
+            }
+        }   
+    </script>
+</body>
+</html>
