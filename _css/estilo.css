@@ -27,7 +27,7 @@ header#cabecalho h2{
 header#cabecalho img#icone{
     position: absolute;
     top: 80px;
-    left: 1035px;
+    left: 960px;
 }
 body{
     background-color: rgb(171, 187, 189);
@@ -90,18 +90,20 @@ nav#menu h1{
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 530px;
+    position: relative;
+    top: -114px;
+    left: 250pt;
 }
 nav#menu li{
     font-size: 10pt;
     font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.25);
     display: inline-block;
     background-color: #dddddd;
     padding: 10px;
-    margin: -4px;
-    border: solid 1px #999999;
+    margin: 0px;
+    /* border: solid 1px #999999; */
+    box-shadow: 1px 1px 4px rgba(0,0,0,.7);
 }
 nav#menu li:hover{
     color: white;
@@ -109,7 +111,7 @@ nav#menu li:hover{
     transition: background-color 1s;
 }
 nav#menu a{
-    color: black;
+    color: #606060;
     text-decoration: none;
 }
 nav#menu a:hover{
